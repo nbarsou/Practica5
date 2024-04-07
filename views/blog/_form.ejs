@@ -1,0 +1,19 @@
+<div class="wideRow">
+    <label for="preg"  class="itemNarrow">Title</label>
+</div>
+<div class="wideRow" style="padding-bottom:2em">
+    <input type="text" class="itemWide" id="titulo" name="title" value="<%= post.title%>" placeholder="Your title..." autocomplete="off" style="width: 300px"/>
+</div>
+<div class="wideRow">
+    <label for="resp"  class="itemNarrow">Body</label>
+</div> 
+<div class="wideRow">
+    <input type="text" class="itemWide" id="cuerpo" name="body" value="<%= post.body%>" placeholder="Write your ideas..." autocomplete="off" style="width: 100%; min-width: 300px; max-width: 600px; height: 300px"/>
+</div>
+<div><label for="img">Attach file (Max size 2MB):</label> <input type="file" id="img" name="image"/>
+</div>
+<br/>
+<div class="button-container">
+    <a href="/posts" class="button">Cancel</a>
+    <input type="submit" class="button" value="Save">
+</div>

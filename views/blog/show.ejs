@@ -1,0 +1,9 @@
+<section style="padding:1em">
+    <h1 class="show-title"><%= post.title%></h1>
+    <p class="show-date"><%= post.updatedAt%></p> 
+    <% include _attachment.ejs %>
+    <p class="show-body"><%= post.body%></p>
+    <div class="button-container">
+    <a href="/posts" class="button">Back</a>
+</div>
+</section>

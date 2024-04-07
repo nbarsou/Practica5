@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyBlog</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="navbar-container">
+        <div class="navbar">
+          <a class="logo" href="/">
+            <img src="/images/logo.png" alt="Logo Página Web" class="logo-img">
+          </a>
+          <a class="nav-link" href="/author">Author</a>
+          <a class="nav-link" href="/posts">Posts</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <%- body %>
+  </main>
+  <footer>
+  <section class="contact-us">
+    <div class="row">
+      <div class="col">
+        <h2>Contact Information</h2>
+        <p>Email: contact@example.com</p>
+        <p>Phone: +1234567890</p>
+        <p>Address: 123 Main Street, City, Country</p>
+      </div>
+      <div class="col">
+        <h2>About the Photographer</h2>
+        <p>Name: Nicolás Barrón Sour</p>
+        <p>Location: City, Country</p>
+        <p>Specialization: Portraits, Landscapes, Events</p>
+      </div>
+      <div class="col">
+        <h2>Photography Blog</h2>
+        <p>Stay updated with our latest posts, tips, and inspiration!</p>
+        <form>
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  </footer>
+  <script type="module" src="/cookieconsent-config.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,26 @@
+<section> 
+    <div class="posts-gallery">
+        <% for (var i in posts) { %>
+        <% var post = posts[i]; %>
+        <div class="post">
+            <a href="/posts/<%= post.id %>"><h3> <%= post.title %> </h3></a>
+            <% include _attachment.ejs %>
+            <p class="post-text"><%= post.body.substring(0,250)%>...</p>
+            <div class="dateEdit">
+                <div class="button-container">
+                    <a href="/posts/<%= post.id %>/edit" class="post-date">Edit</a> 
+                    <p class="post-date"> | </p> 
+                    <a href="/posts/<%= post.id %>?_method=delete"
+                           onClick="return confirm('Delete: <%= post.title%>');"
+                           class="post-date">Delete</a>
+                </div>
+                <p class="post-date"> <%= post.updatedAt %> </p>
+            </div>
+        </div>
+        <% } %>
+    </div>
+    <div style="padding: 1em 2em">
+        <a href="/posts/new" class="button">Create New Post</a>
+    </div> 
+</section> 
+

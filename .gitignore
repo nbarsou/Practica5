@@ -1,0 +1,5 @@
+.DS_Store
+TODO.md
+blog.sqlite
+.env
+node_modules/
