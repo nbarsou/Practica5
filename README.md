@@ -4,6 +4,8 @@
 
 En la practica 5 se desarrollo una aplicación web utilizando Node.js y Express.js. Proporciona funcionalidades para crear, editar y eliminar publicaciones en un blog. Los usuarios pueden ver las publicaciones en el sitio web, que cuenta con un diseño receptivo para una experiencia fluida en diferentes dispositivos.
 
+Nota: Tuve que borrar el repositorio pasado, porque guarde node_modules dentro de git lo cual hizo que el archivo pesara demasiado para subir a Moodle.
+
 ## Instalación
 
 Para ejecutar este proyecto localmente, sigue estos pasos:
